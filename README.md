@@ -49,7 +49,7 @@ Czyścimy cache: ```buildctl prune```<br />
 Zrzut ekranu: [wykonanie komendy](https://github.com/Adrian54549/lab4_PFSwChO/blob/main/screenshots/cleanCacheUseMax.png)<br /><br />
 Ponownie budujemy obraz wykorzystując zapisany wcześniej lokalny cache: <br />
 ```buildctl build --ssh default=/mnt/c/Users/Adrian/.ssh/id_ed25519 --frontend=dockerfile.v0 --local context=. --local dockerfile=. --output type=image,name=docker.io/adrianszafranski/zaddodatkowe:max2,push=true --import-cache type=local,src=.```<br />
-Zrzut ekranu: [wykonanie komendy](https://github.com/Adrian54549/lab4_PFSwChO/blob/main/screenshots/importCacheLocallyUseMax.png)<br />
+Zrzut ekranu: [wykonanie komendy](https://github.com/Adrian54549/lab4_PFSwChO/blob/main/screenshots/importCacheLocallyUseMax.png)<br /><br />
 Obrazy zostały przesłane do repozytorium DockerHub: https://hub.docker.com/r/adrianszafranski/zaddodatkowe
 
 ## Zbiorcze linki do DockerHub
